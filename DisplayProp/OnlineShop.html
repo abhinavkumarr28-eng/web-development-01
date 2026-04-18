@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: aliceblue; 
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        .parent{
+            background-color: gainsboro;
+            gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            padding: 15px;
+            
+
+
+        }
+        .product{ border: 1px solid black;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 4px 6px 8px;
+            border-radius: 12px;
+            
+            
+                  
+        }
+        .product img{width: 100%;
+                     height: 400px;
+                     object-fit: cover;      
+        }
+        .product button{padding: 12px;
+                        margin-bottom: 12px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        border: none;
+                        background-color: orange;
+                        color: white;
+                        border-radius: 12px;
+                        cursor: pointer;
+        }
+        .product button:hover{background-color: red;
+                              transform: scale(1.02);
+                              transition: 30ms;
+
+        }
+        .product:hover{background-color: darkseagreen;
+                       transform: scale(1.02);
+                       transition: 0s;
+
+        }
+
+
+    </style>
+</head>
+<body>
+     <div class="parent">
+          
+         <div class="product">
+            <img src="https://images.pexels.com/photos/36651781/pexels-photo-36651781.jpeg">
+            <h1>Hot Wheels</h1>
+            <p><del>20$</del> <mark>15$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://images.pexels.com/photos/29267100/pexels-photo-29267100.jpeg">
+            <h1>Basketball</h1>
+            <p><del>50$</del> <mark>25$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://images.pexels.com/photos/6011276/pexels-photo-6011276.jpeg">
+            <h1>Speaker</h1>
+            <p><del>100$</del> <mark>75$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://images.pexels.com/photos/4113333/pexels-photo-4113333.jpeg">
+            <h1>Chocolate</h1>
+            <p><del>10$</del> <mark>8$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://images.pexels.com/photos/15102004/pexels-photo-15102004.jpeg">
+            <h1>books</h1>
+            <p><del>30$</del> <mark>25$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg">
+            <h1>Tshirt</h1>
+            <p><del>20$</del> <mark>15$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+         <div class="product">
+            <img src="https://images.pexels.com/photos/10939968/pexels-photo-10939968.jpeg">
+            <h1>Milton Bottle</h1>
+            <p><del>20$</del> <mark>15$</mark></p>
+            <button>Add To Cart</button>
+         </div>
+
+
+
+     </div>
+</body>
+</html>
